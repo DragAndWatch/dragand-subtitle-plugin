@@ -1,0 +1,81 @@
+{
+  "name": "dragand-subtitle-plugin",
+  "version": "2.0.2",
+  "description": "Open Source library to get subtitles from famous externals apis",
+  "contributors": [
+    {
+      "name": "Mathieu Le Tyrant",
+      "email": "mathieu.letyrant@gmail.com",
+      "url": "http://mathieuletyrant.com",
+      "twitter": "http://www.twitter.com/mathlty",
+      "role": "Developer"
+    },
+    {
+      "name": "Arthur Mialon",
+      "email": "arthurmialon@gmail.com",
+      "url": "http://www.arthurmialon.fr",
+      "twitter": "http://www.twitter.com/arthurmialon",
+      "role": "Developer"
+    },
+    {
+      "name": "Patrick Heng",
+      "email": "hengpatrick.pro@gmail.com",
+      "url": "http://www.hengpatrick.fr",
+      "twitter": "https://twitter.com/Pat_Hg",
+      "role": "Developer"
+    },
+    {
+      "name": "Robin Mastromarino",
+      "email": "robin.astromarino@gmail.com",
+      "url": "http://robinmastromarino.com/",
+      "twitter": "https://twitter.com/cherwoood",
+      "role": "Designer"
+    }
+  ],
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "prebuild": "rm -rf dist && mkdir dist",
+    "build": "./node_modules/.bin/babel src --out-dir dist --watch",
+    "test": "./node_modules/.bin/mocha --compilers js:babel-core/register"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DragAndWatch/dragand-subtitle-plugin.git"
+  },
+  "keywords": [
+    "subtitles",
+    "apis",
+    "opensubtitles",
+    "open-subtitles",
+    "addic7ed",
+    "movies",
+    "series",
+    "podnapisi",
+    "yify"
+  ],
+  "author": "Arthur Mialon <arthurmialon@gmail.com> (http://www.arthurmialon.fr/)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/DragAndWatch/dragand-subtitle-plugin/issues"
+  },
+  "homepage": "https://github.com/DragAndWatch/dragand-subtitle-plugin#readme",
+  "dependencies": {
+    "cheerio": "^0.19.0",
+    "country-language": "0.1.7",
+    "download": "^4.4.3",
+    "natural": "^0.2.1",
+    "opensubtitles-api": "^2.1.0",
+    "q": "^1.4.1",
+    "request-promise": "2.0.1",
+    "subdb": "0.0.3",
+    "xml2json": "^0.9.0",
+    "yify-subs": "1.0.0"
+  },
+  "devDependencies": {
+    "babel-core": "6.1.21",
+    "babel-preset-es2015": "6.1.18"
+  }
+}
